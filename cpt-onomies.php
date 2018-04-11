@@ -5,7 +5,7 @@
  * Description:     A CPT-onomy is a taxonomy built from a custom post type, using the post titles as the taxonomy terms. Create custom post types using the CPT-onomies custom post type manager or use post types created by themes or other plugins.
  * Version:         2.0.0
  * Author:          Rocio Porras
- * Author URI:      https://bamadesigner.com
+ * Author URI:      https://www.antevenio.com
  * License:         GPL-2.0+
  * License URI:     http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:     cpt-onomies
@@ -18,7 +18,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // If you define them, will they be used?
-define( 'CPT_ONOMIES_VERSION', '1.3.6' );
+define( 'CPT_ONOMIES_VERSION', '2.0.0' );
 define( 'CPT_ONOMIES_PLUGIN_DIRECTORY_URL', 'https://github.com/d1alogo/cpt-onomies.git' );
 define( 'CPT_ONOMIES_PLUGIN_FILE', 'cpt-onomies/cpt-onomies.php' );
 define( 'CPT_ONOMIES_OPTIONS_PAGE', 'custom-post-type-onomies' ); // @TODO remove when we create admin class

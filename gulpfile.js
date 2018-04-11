@@ -59,9 +59,9 @@ gulp.task( 'translate', function() {
 			domain: 'cpt-onomies',
 			destFile:'cpt-onomies.pot',
 			package: 'cpt-onomies',
-			bugReport: 'https://github.com/bamadesigner/cpt-onomies/issues',
-			lastTranslator: 'Rachel Carden <bamadesigner@gmail.com>',
-			team: 'Rachel Carden <bamadesigner@gmail.com>',
+			bugReport: 'https://github.com/d1alogo/cpt-onomies.git',
+			lastTranslator: 'Labs <labs-dev@gmail.com>',
+			team: 'Labs <labs-dev@gmail.com>',
 			headers: false
 		}))
 		.pipe(gulp.dest('languages'));

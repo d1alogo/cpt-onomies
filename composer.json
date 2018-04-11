@@ -1,11 +1,11 @@
 {
-    "name": "bamadesigner/cpt-onomies",
+    "name": "antevenio/cpt-onomies",
 	"description": "A WordPress plugin that allows you to use custom post types as taxonomies.",
 	"type": "wordpress-plugin",
 	"authors": [
 		{
-			"name": "Rachel Carden",
-			"email": "bamadesigner@gmail.com"
+			"name": "Antevenio",
+			"email": "labs-dev@gmail.com"
 		}
 	],
 	"license": "GPL-2.0+",
