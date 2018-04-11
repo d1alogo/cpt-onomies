@@ -2,7 +2,6 @@
 var autoprefixer = require('gulp-autoprefixer');
 var gulp = require('gulp');
 var minify = require('gulp-minify');
-var phpcs = require('gulp-phpcs');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var sort = require('gulp-sort');
@@ -12,8 +11,7 @@ var wp_pot = require('gulp-wp-pot');
 // Define the source paths for each file type
 var src = {
     scss: ['assets/scss/**/*'],
-    js: ['assets/js/**/*.js','!assets/js/*.min.js'],
-	php: ['**/*.php','!vendor/**','!node_modules/**']
+	js: ['assets/js/**/*.js','!assets/js/*.min.js']
 };
 
 // Define the destination paths for each file type
@@ -50,17 +48,9 @@ gulp.task( 'js', function() {
 		}))
 		.pipe(gulp.dest(dest.js))
 });
-
-// Check our PHP
-gulp.task( 'php', function() {
-	gulp.src(src.php)
-		.pipe(phpcs({
-			bin: 'vendor/bin/phpcs',
-			standard: 'WordPress-Core'
-		}))
-		.pipe(phpcs.reporter('log'));
+gulp.task("php", function () {
+    gulp.start("serve");
 });
-
 // Create the .pot translation file
 gulp.task( 'translate', function() {
 	gulp.src(src.php)
